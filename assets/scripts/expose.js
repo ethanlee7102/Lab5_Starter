@@ -12,10 +12,10 @@ function init() {
   };
 
   const hornImage = document.querySelector("img[alt='No image selected']");
-
+  const horn = e.target.value;
   selectElement.addEventListener("change", function(e) {
-    if (hornImage[e.target.value]) {
-      hornImage.src = hornImage[e.target.value];
+    if (allImages[horn]) {
+      allImages.src = hornImage[horn];
     }
   });
 }
