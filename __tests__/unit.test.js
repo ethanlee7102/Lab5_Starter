@@ -34,7 +34,7 @@ test("valid passwords", () => {
 });
 
 test("invalid passwords", () => {
-  expect(isEmail("4Hellos")).toBe(true);
-  expect(isEmail("helloagainthisisgonnabetoolong")).toBe(true);
+  expect(isEmail("4Hellos")).toBe(false);
+  expect(isEmail("helloagainthisisgonnabetoolong")).toBe(false);
 });
 
