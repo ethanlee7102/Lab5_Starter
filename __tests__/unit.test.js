@@ -28,3 +28,13 @@ test("invalid emails", () => {
   expect(isEmail("emailyahoonet")).toBe(false);
 });
 
+test("valid passwords", () => {
+  expect(isEmail("Hellos")).toBe(true);
+  expect(isEmail("helloagain")).toBe(true);
+});
+
+test("invalid passwords", () => {
+  expect(isEmail("4Hellos")).toBe(true);
+  expect(isEmail("helloagainthisisgonnabetoolong")).toBe(true);
+});
+
