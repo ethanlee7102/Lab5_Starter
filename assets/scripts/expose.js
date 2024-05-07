@@ -15,7 +15,7 @@ function init() {
   const horn = e.target.value;
   selectElement.addEventListener("change", function(e) {
     if (allImages[horn]) {
-      allImages.src = hornImage[horn];
+      hornImage.src = allImages[horn];
     }
   });
 }
