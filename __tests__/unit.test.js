@@ -24,7 +24,7 @@ test("valid emails", () => {
 });
 
 test("invalid emails", () => {
-  expect(isEmail("ethanlee7@gmail.comasdfasdf")).toBe(true);
-  expect(isEmail("emailyahoo.net")).toBe(true);
+  expect(isEmail("ethanlee7@gmail.comasdfasdf")).toBe(false);
+  expect(isEmail("emailyahoonet")).toBe(false);
 });
 
