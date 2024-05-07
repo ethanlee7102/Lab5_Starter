@@ -12,8 +12,9 @@ function init() {
   };
 
   const hornImage = document.querySelector("img[alt='No image selected']");
-  const horn = e.target.value;
+
   selectElement.addEventListener("change", function(e) {
+    const horn = e.target.value;
     if (allImages[horn]) {
       hornImage.src = allImages[horn];
     }
