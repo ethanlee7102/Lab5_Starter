@@ -72,8 +72,8 @@ test("valid color2", (#111111) => {
 });
 
 test("invalid color1", () => {
-  expect(isHexColor("#ABCD")).toBe(true);
+  expect(isHexColor("#ABCD")).toBe(false);
 });
 test("invalid color2", (#blue) => {
-  expect(isHexColor("1/1/2021")).toBe(true);
+  expect(isHexColor("1/1/2021")).toBe(false);
 });
