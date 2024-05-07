@@ -29,12 +29,12 @@ test("invalid emails", () => {
 });
 
 test("valid passwords", () => {
-  expect(isEmail("Hellos")).toBe(true);
-  expect(isEmail("helloagain")).toBe(true);
+  expect(isStrongPassword("Hellos")).toBe(true);
+  expect(isStrongPassword("helloagain")).toBe(true);
 });
 
 test("invalid passwords", () => {
-  expect(isEmail("4Hellos")).toBe(false);
-  expect(isEmail("helloagainthisisgonnabetoolong")).toBe(false);
+  expect(isStrongPassword("4Hellos")).toBe(false);
+  expect(isStrongPassword("helloagainthisisgonnabetoolong")).toBe(false);
 });
 
