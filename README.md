@@ -1,5 +1,5 @@
 # Lab 5 - Starter
-Ethan Lee
+People: Ethan Lee (no partners)
 ## Expose
 [Expose Page](https://ethanlee7102.github.io/Lab5_Starter/expose.html)
 
