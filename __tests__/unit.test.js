@@ -14,6 +14,6 @@ test("valid phone numbers", () => {
 });
 
 test("invalid phone numbers", () => {
-  expect(isPhoneNumber("(123) 4555556-7890")).toBe(false);
+  expect(isPhoneNumber("(123) 46786-7890")).toBe(false);
   expect(isPhoneNumber("hi")).toBe(false);
 });
