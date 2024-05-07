@@ -17,3 +17,14 @@ test("invalid phone numbers", () => {
   expect(isPhoneNumber("(123) 45-7890")).toBe(false);
   expect(isPhoneNumber("hi")).toBe(false);
 });
+
+test("valid emails", () => {
+  expect(isEmail("ethanlee7@gmail.com")).toBe(true);
+  expect(isEmail("email@yahoo.net")).toBe(true);
+});
+
+test("invalid emails", () => {
+  expect(isEmail("ethanlee7@gmail.comasdfasdf")).toBe(true);
+  expect(isEmail("emailyahoo.net")).toBe(true);
+});
+
