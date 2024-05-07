@@ -51,10 +51,10 @@ test("invalid password2", () => {
 });
 
 test("valid date1", () => {
-  expect(isStrongPassword("01/01/0001")).toBe(true);
+  expect(isStrongPassword("01/01/2020")).toBe(true);
 });
 test("valid date2", () => {
-  expect(isStrongPassword("1/1/0001")).toBe(true);
+  expect(isStrongPassword("1/1/2021")).toBe(true);
 });
 
 test("invalid date1", () => {
