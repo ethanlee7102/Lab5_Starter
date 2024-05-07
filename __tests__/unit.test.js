@@ -8,4 +8,12 @@ import {
   isHexColor,
 } from '../code-to-unit-test/unit-test-me';
 
-// TODO - Part 2
+test("valid phone numbers", () => {
+  expect(functions.isPhoneNumber("(123) 456-7890")).toBe(true);
+  expect(functions.isPhoneNumber("123 456-7890")).toBe(true);
+});
+
+test("invalid phone numbers", () => {
+  expect(functions.isPhoneNumber("(123) 4555556-7890")).toBe(false);
+  expect(functions.isPhoneNumber("hi")).toBe(false);
+});
