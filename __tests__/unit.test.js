@@ -63,3 +63,17 @@ test("invalid date1", () => {
 test("invalid date2", () => {
   expect(isDate("a day")).toBe(false);
 });
+
+test("valid color1", () => {
+  expect(isHexColor("#ABC")).toBe(true);
+});
+test("valid color2", (#111111) => {
+  expect(isHexColor("1/1/2021")).toBe(true);
+});
+
+test("invalid color1", () => {
+  expect(isHexColor("#ABCD")).toBe(true);
+});
+test("invalid color2", (#blue) => {
+  expect(isHexColor("1/1/2021")).toBe(true);
+});
